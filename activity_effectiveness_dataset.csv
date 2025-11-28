@@ -1,0 +1,1170 @@
+stu_id,gender_encoded,age,activity_type_name,total_duration_minutes,success
+30,0,22,Group Assignment,35.0,1
+95,0,23,Group Assignment,39.0,1
+76,1,24,Individual Assignment,36.0,0
+30,0,22,Individual Assignment,30.0,1
+36,0,23,Group Assignment,13.0,0
+65,0,18,Group Assignment,18.0,1
+14,1,19,Group Assignment,24.0,1
+55,1,25,Individual Assignment,28.0,0
+69,0,18,Group Assignment,26.0,0
+63,0,21,Individual Assignment,64.0,1
+11,0,24,Group Assignment,59.0,1
+49,1,23,Forum,19.0,1
+66,1,20,Group Assignment,42.0,1
+49,1,23,Individual Assignment,27.0,0
+97,0,23,Quiz,19.0,1
+72,1,19,Group Assignment,43.0,1
+51,0,23,Individual Assignment,33.0,0
+7,0,25,Individual Assignment,13.0,1
+16,1,20,Group Assignment,60.0,1
+29,0,23,Individual Assignment,21.0,1
+54,0,20,Group Assignment,53.0,0
+7,0,25,Group Assignment,42.0,1
+4,1,21,Group Assignment,49.0,1
+9,0,24,Group Assignment,68.0,1
+36,0,23,Individual Assignment,23.0,1
+88,1,19,Group Assignment,28.0,0
+9,0,24,Individual Assignment,34.0,0
+28,0,20,Forum,32.0,1
+74,0,19,Individual Assignment,42.0,1
+74,0,19,Quiz,51.0,0
+10,0,21,Group Assignment,29.0,1
+54,0,20,Group Assignment,15.0,1
+96,0,25,Quiz,74.0,1
+2,1,23,Forum,29.0,0
+84,1,18,Group Assignment,84.0,0
+39,1,24,Group Assignment,47.0,1
+21,0,22,Individual Assignment,17.0,1
+18,0,24,Individual Assignment,37.0,0
+7,0,25,Quiz,27.0,1
+71,0,20,Group Assignment,132.0,1
+87,1,19,Forum,8.0,1
+40,0,20,Group Assignment,10.0,1
+69,0,18,Group Assignment,81.0,0
+33,0,25,Quiz,23.0,0
+49,1,23,Forum,10.0,1
+56,1,25,Individual Assignment,28.0,1
+3,1,22,Group Assignment,36.0,1
+68,1,23,Group Assignment,16.0,0
+16,1,20,Individual Assignment,36.0,1
+94,0,23,Individual Assignment,42.0,1
+27,0,23,Forum,43.0,1
+39,1,24,Quiz,24.0,1
+43,0,22,Group Assignment,24.0,1
+54,0,20,Quiz,17.0,1
+62,1,22,Forum,44.0,1
+99,0,21,Group Assignment,23.0,0
+33,0,25,Group Assignment,14.0,0
+73,0,22,Forum,29.0,1
+32,0,23,Individual Assignment,18.0,1
+18,0,24,Individual Assignment,48.0,0
+2,1,23,Forum,16.0,0
+48,0,21,Forum,25.0,0
+29,0,23,Individual Assignment,52.0,1
+57,1,19,Individual Assignment,87.0,1
+72,1,19,Individual Assignment,120.0,1
+14,1,19,Forum,35.0,0
+73,0,22,Group Assignment,7.0,1
+60,1,22,Forum,58.0,0
+5,1,25,Group Assignment,45.0,0
+62,1,22,Individual Assignment,36.0,0
+24,0,25,Individual Assignment,16.0,1
+84,1,18,Individual Assignment,30.0,1
+8,1,25,Forum,54.0,0
+86,1,20,Individual Assignment,17.0,0
+26,0,20,Quiz,24.0,1
+17,0,20,Individual Assignment,28.0,0
+34,0,23,Forum,32.0,1
+43,0,22,Individual Assignment,20.0,0
+76,1,24,Group Assignment,17.0,1
+5,1,25,Forum,33.0,1
+99,0,21,Group Assignment,46.0,0
+49,1,23,Individual Assignment,51.0,1
+99,0,21,Group Assignment,6.0,0
+55,1,25,Individual Assignment,49.0,1
+18,0,24,Group Assignment,38.0,1
+100,0,21,Group Assignment,18.0,0
+6,1,21,Individual Assignment,32.0,1
+6,1,21,Forum,15.0,1
+95,0,23,Quiz,55.0,0
+67,0,25,Individual Assignment,21.0,0
+6,1,21,Individual Assignment,6.0,1
+66,1,20,Group Assignment,41.0,1
+38,0,23,Individual Assignment,59.0,1
+83,0,24,Group Assignment,22.0,1
+53,0,24,Forum,40.0,1
+12,0,21,Quiz,22.0,0
+99,0,21,Individual Assignment,26.0,0
+2,1,23,Individual Assignment,22.0,0
+56,1,25,Group Assignment,47.0,0
+72,1,19,Group Assignment,72.0,0
+5,1,25,Forum,44.0,1
+41,1,24,Individual Assignment,33.0,0
+38,0,23,Individual Assignment,43.0,0
+60,1,22,Individual Assignment,25.0,0
+40,0,20,Individual Assignment,23.0,1
+40,0,20,Individual Assignment,68.0,0
+87,1,19,Individual Assignment,58.0,0
+66,1,20,Forum,39.0,0
+4,1,21,Group Assignment,42.0,1
+59,0,18,Individual Assignment,19.0,1
+60,1,22,Group Assignment,66.0,0
+34,0,23,Forum,48.0,1
+26,0,20,Forum,20.0,0
+81,0,19,Quiz,34.0,1
+59,0,18,Forum,55.0,1
+64,1,21,Forum,60.0,1
+2,1,23,Group Assignment,49.0,0
+47,0,19,Group Assignment,31.0,0
+78,1,24,Forum,26.0,0
+86,1,20,Group Assignment,42.0,0
+42,1,18,Individual Assignment,24.0,1
+63,0,21,Individual Assignment,19.0,1
+53,0,24,Forum,18.0,1
+17,0,20,Forum,58.0,1
+96,0,25,Group Assignment,17.0,1
+65,0,18,Forum,23.0,1
+87,1,19,Forum,23.0,0
+98,0,24,Individual Assignment,42.0,0
+65,0,18,Individual Assignment,15.0,1
+15,1,23,Individual Assignment,56.0,1
+93,0,21,Individual Assignment,64.0,1
+59,0,18,Group Assignment,43.0,1
+20,0,20,Individual Assignment,47.0,1
+68,1,23,Forum,27.0,0
+49,1,23,Individual Assignment,26.0,1
+22,1,21,Group Assignment,38.0,1
+59,0,18,Forum,46.0,1
+42,1,18,Group Assignment,65.0,0
+98,0,24,Group Assignment,33.0,0
+39,1,24,Forum,26.0,1
+32,0,23,Forum,44.0,0
+4,1,21,Group Assignment,46.0,1
+67,0,25,Forum,30.0,1
+99,0,21,Quiz,70.0,0
+5,1,25,Individual Assignment,14.0,1
+31,1,19,Quiz,81.0,0
+54,0,20,Group Assignment,9.0,0
+46,0,22,Forum,51.0,1
+65,0,18,Individual Assignment,47.0,1
+17,0,20,Group Assignment,56.0,1
+55,1,25,Group Assignment,54.0,0
+21,0,22,Group Assignment,51.0,1
+12,0,21,Individual Assignment,51.0,1
+7,0,25,Individual Assignment,21.0,0
+88,1,19,Individual Assignment,36.0,1
+53,0,24,Forum,16.0,0
+63,0,21,Group Assignment,17.0,1
+21,0,22,Group Assignment,28.0,1
+41,1,24,Group Assignment,47.0,0
+55,1,25,Forum,45.0,0
+37,0,20,Group Assignment,24.0,1
+60,1,22,Quiz,19.0,1
+9,0,24,Group Assignment,40.0,1
+12,0,21,Group Assignment,12.0,1
+92,1,25,Group Assignment,27.0,0
+75,1,18,Individual Assignment,28.0,1
+37,0,20,Group Assignment,13.0,1
+60,1,22,Group Assignment,71.0,0
+73,0,22,Quiz,28.0,0
+72,1,19,Forum,40.0,0
+88,1,19,Forum,55.0,0
+46,0,22,Individual Assignment,96.0,0
+59,0,18,Quiz,22.0,1
+16,1,20,Group Assignment,44.0,1
+66,1,20,Forum,48.0,1
+99,0,21,Group Assignment,36.0,1
+88,1,19,Group Assignment,5.0,1
+63,0,21,Individual Assignment,24.0,1
+57,1,19,Individual Assignment,47.0,0
+44,0,21,Forum,22.0,0
+39,1,24,Group Assignment,47.0,0
+59,0,18,Individual Assignment,45.0,0
+96,0,25,Individual Assignment,13.0,0
+65,0,18,Group Assignment,50.0,0
+88,1,19,Individual Assignment,18.0,0
+36,0,23,Forum,56.0,0
+45,0,22,Group Assignment,70.0,1
+46,0,22,Forum,55.0,1
+96,0,25,Forum,58.0,1
+35,1,23,Individual Assignment,8.0,0
+87,1,19,Individual Assignment,26.0,1
+66,1,20,Forum,42.0,1
+83,0,24,Group Assignment,20.0,1
+61,1,19,Group Assignment,30.0,0
+70,1,21,Individual Assignment,52.0,0
+20,0,20,Group Assignment,13.0,0
+81,0,19,Individual Assignment,72.0,1
+76,1,24,Group Assignment,38.0,1
+10,0,21,Individual Assignment,33.0,0
+83,0,24,Forum,51.0,1
+98,0,24,Forum,31.0,0
+59,0,18,Forum,20.0,1
+71,0,20,Group Assignment,47.0,1
+95,0,23,Individual Assignment,44.0,1
+10,0,21,Individual Assignment,54.0,0
+57,1,19,Forum,41.0,0
+6,1,21,Group Assignment,113.0,1
+88,1,19,Quiz,41.0,1
+93,0,21,Group Assignment,27.0,1
+88,1,19,Forum,21.0,1
+89,1,22,Individual Assignment,51.0,1
+89,1,22,Forum,32.0,0
+86,1,20,Group Assignment,37.0,0
+91,1,22,Individual Assignment,22.0,1
+54,0,20,Individual Assignment,51.0,1
+92,1,25,Individual Assignment,21.0,0
+4,1,21,Forum,24.0,1
+22,1,21,Group Assignment,17.0,1
+22,1,21,Individual Assignment,47.0,1
+25,0,18,Quiz,8.0,1
+75,1,18,Individual Assignment,56.0,1
+32,0,23,Group Assignment,80.0,1
+48,0,21,Group Assignment,17.0,1
+61,1,19,Group Assignment,60.0,0
+13,0,20,Individual Assignment,47.0,1
+38,0,23,Individual Assignment,62.0,1
+72,1,19,Forum,73.0,1
+57,1,19,Group Assignment,25.0,1
+12,0,21,Forum,18.0,1
+89,1,22,Group Assignment,14.0,1
+58,0,22,Group Assignment,51.0,1
+81,0,19,Individual Assignment,38.0,1
+59,0,18,Group Assignment,102.0,1
+99,0,21,Individual Assignment,59.0,0
+75,1,18,Group Assignment,20.0,1
+10,0,21,Quiz,29.0,1
+75,1,18,Forum,20.0,0
+74,0,19,Individual Assignment,67.0,0
+52,0,25,Individual Assignment,25.0,0
+12,0,21,Individual Assignment,50.0,1
+98,0,24,Quiz,21.0,0
+10,0,21,Forum,49.0,1
+14,1,19,Forum,20.0,1
+30,0,22,Individual Assignment,22.0,1
+20,0,20,Individual Assignment,15.0,1
+68,1,23,Group Assignment,56.0,1
+16,1,20,Individual Assignment,20.0,1
+73,0,22,Individual Assignment,69.0,0
+49,1,23,Group Assignment,14.0,1
+98,0,24,Individual Assignment,15.0,1
+37,0,20,Forum,38.0,1
+13,0,20,Quiz,58.0,1
+77,1,23,Individual Assignment,41.0,0
+61,1,19,Individual Assignment,30.0,0
+54,0,20,Forum,47.0,1
+34,0,23,Forum,56.0,1
+78,1,24,Group Assignment,27.0,0
+71,0,20,Individual Assignment,6.0,1
+78,1,24,Group Assignment,9.0,1
+56,1,25,Group Assignment,16.0,1
+16,1,20,Individual Assignment,38.0,1
+34,0,23,Group Assignment,46.0,1
+35,1,23,Forum,39.0,1
+55,1,25,Group Assignment,25.0,1
+27,0,23,Forum,41.0,1
+77,1,23,Group Assignment,51.0,1
+41,1,24,Forum,28.0,0
+42,1,18,Group Assignment,28.0,1
+51,0,23,Forum,47.0,0
+18,0,24,Group Assignment,65.0,0
+15,1,23,Individual Assignment,45.0,0
+97,0,23,Individual Assignment,51.0,1
+37,0,20,Individual Assignment,28.0,1
+74,0,19,Forum,39.0,1
+52,0,25,Forum,31.0,1
+15,1,23,Group Assignment,12.0,1
+52,0,25,Forum,20.0,1
+94,0,23,Quiz,46.0,1
+78,1,24,Individual Assignment,8.0,0
+80,0,19,Forum,11.0,1
+87,1,19,Individual Assignment,24.0,1
+34,0,23,Group Assignment,87.0,1
+98,0,24,Group Assignment,34.0,0
+58,0,22,Individual Assignment,15.0,1
+46,0,22,Individual Assignment,22.0,0
+49,1,23,Individual Assignment,19.0,1
+84,1,18,Forum,25.0,1
+32,0,23,Group Assignment,45.0,0
+99,0,21,Forum,50.0,0
+22,1,21,Forum,24.0,1
+69,0,18,Group Assignment,33.0,1
+35,1,23,Individual Assignment,33.0,1
+60,1,22,Group Assignment,71.0,1
+23,0,25,Group Assignment,9.0,1
+9,0,24,Forum,35.0,1
+40,0,20,Group Assignment,9.0,1
+99,0,21,Forum,17.0,0
+55,1,25,Individual Assignment,15.0,0
+82,1,24,Individual Assignment,19.0,0
+97,0,23,Forum,42.0,0
+19,0,20,Group Assignment,54.0,1
+19,0,20,Individual Assignment,57.0,0
+38,0,23,Group Assignment,33.0,1
+5,1,25,Individual Assignment,77.0,0
+57,1,19,Forum,15.0,0
+29,0,23,Forum,19.0,1
+90,0,18,Individual Assignment,39.0,1
+77,1,23,Quiz,62.0,1
+5,1,25,Individual Assignment,45.0,0
+78,1,24,Group Assignment,58.0,1
+75,1,18,Forum,22.0,1
+93,0,21,Group Assignment,7.0,1
+56,1,25,Forum,28.0,1
+93,0,21,Individual Assignment,24.0,1
+58,0,22,Forum,17.0,0
+55,1,25,Group Assignment,14.0,0
+35,1,23,Group Assignment,15.0,1
+94,0,23,Group Assignment,11.0,1
+40,0,20,Group Assignment,25.0,0
+41,1,24,Group Assignment,7.0,0
+32,0,23,Individual Assignment,55.0,1
+34,0,23,Individual Assignment,24.0,1
+70,1,21,Group Assignment,29.0,0
+53,0,24,Individual Assignment,53.0,1
+57,1,19,Group Assignment,47.0,0
+93,0,21,Forum,16.0,1
+15,1,23,Group Assignment,9.0,1
+25,0,18,Individual Assignment,21.0,1
+36,0,23,Individual Assignment,38.0,1
+4,1,21,Quiz,24.0,1
+94,0,23,Forum,31.0,0
+26,0,20,Individual Assignment,6.0,0
+85,0,18,Individual Assignment,15.0,0
+97,0,23,Group Assignment,134.0,0
+96,0,25,Forum,68.0,1
+53,0,24,Quiz,37.0,0
+75,1,18,Quiz,16.0,0
+11,0,24,Group Assignment,22.0,0
+85,0,18,Forum,7.0,1
+37,0,20,Individual Assignment,100.0,0
+100,0,21,Individual Assignment,55.0,0
+77,1,23,Individual Assignment,74.0,0
+2,1,23,Forum,6.0,0
+40,0,20,Forum,25.0,1
+41,1,24,Group Assignment,38.0,1
+58,0,22,Group Assignment,15.0,1
+48,0,21,Group Assignment,28.0,1
+23,0,25,Individual Assignment,39.0,1
+15,1,23,Quiz,45.0,0
+83,0,24,Forum,25.0,0
+85,0,18,Group Assignment,50.0,1
+62,1,22,Forum,19.0,0
+37,0,20,Individual Assignment,40.0,1
+81,0,19,Group Assignment,23.0,1
+33,0,25,Group Assignment,62.0,1
+45,0,22,Group Assignment,29.0,1
+86,1,20,Individual Assignment,12.0,1
+98,0,24,Individual Assignment,41.0,1
+77,1,23,Group Assignment,10.0,0
+95,0,23,Forum,13.0,1
+48,0,21,Quiz,16.0,0
+10,0,21,Group Assignment,81.0,1
+66,1,20,Individual Assignment,52.0,1
+46,0,22,Quiz,28.0,1
+61,1,19,Individual Assignment,14.0,1
+54,0,20,Forum,13.0,1
+77,1,23,Group Assignment,35.0,0
+35,1,23,Individual Assignment,54.0,1
+74,0,19,Group Assignment,15.0,1
+24,0,25,Individual Assignment,42.0,1
+9,0,24,Individual Assignment,57.0,0
+54,0,20,Individual Assignment,22.0,0
+95,0,23,Group Assignment,19.0,1
+67,0,25,Group Assignment,19.0,0
+68,1,23,Group Assignment,51.0,1
+2,1,23,Group Assignment,19.0,0
+75,1,18,Group Assignment,26.0,1
+74,0,19,Individual Assignment,32.0,1
+100,0,21,Individual Assignment,45.0,0
+32,0,23,Individual Assignment,29.0,1
+60,1,22,Individual Assignment,10.0,0
+45,0,22,Individual Assignment,44.0,1
+48,0,21,Group Assignment,53.0,0
+26,0,20,Group Assignment,48.0,1
+6,1,21,Quiz,34.0,1
+25,0,18,Individual Assignment,9.0,0
+74,0,19,Forum,22.0,1
+26,0,20,Group Assignment,24.0,0
+35,1,23,Group Assignment,52.0,0
+66,1,20,Individual Assignment,32.0,1
+24,0,25,Forum,56.0,0
+35,1,23,Group Assignment,21.0,0
+30,0,22,Forum,57.0,1
+44,0,21,Forum,26.0,0
+53,0,24,Individual Assignment,32.0,1
+90,0,18,Group Assignment,29.0,1
+95,0,23,Individual Assignment,12.0,1
+30,0,22,Group Assignment,50.0,1
+46,0,22,Group Assignment,26.0,1
+71,0,20,Forum,12.0,1
+98,0,24,Group Assignment,50.0,0
+91,1,22,Quiz,12.0,1
+47,0,19,Individual Assignment,38.0,0
+42,1,18,Individual Assignment,24.0,1
+17,0,20,Group Assignment,52.0,0
+15,1,23,Forum,40.0,0
+56,1,25,Individual Assignment,39.0,1
+39,1,24,Individual Assignment,49.0,0
+100,0,21,Group Assignment,78.0,0
+15,1,23,Individual Assignment,47.0,1
+39,1,24,Forum,62.0,1
+56,1,25,Quiz,13.0,1
+63,0,21,Group Assignment,27.0,1
+60,1,22,Forum,25.0,1
+28,0,20,Group Assignment,62.0,1
+3,1,22,Forum,37.0,1
+74,0,19,Individual Assignment,20.0,1
+8,1,25,Forum,64.0,0
+36,0,23,Group Assignment,66.0,1
+34,0,23,Individual Assignment,69.0,1
+45,0,22,Forum,23.0,1
+41,1,24,Individual Assignment,21.0,1
+88,1,19,Group Assignment,29.0,0
+8,1,25,Group Assignment,71.0,0
+86,1,20,Group Assignment,42.0,0
+63,0,21,Forum,57.0,1
+34,0,23,Group Assignment,39.0,1
+4,1,21,Forum,9.0,1
+17,0,20,Group Assignment,28.0,1
+37,0,20,Individual Assignment,11.0,1
+92,1,25,Individual Assignment,29.0,1
+78,1,24,Individual Assignment,5.0,1
+58,0,22,Forum,5.0,1
+65,0,18,Group Assignment,102.0,1
+55,1,25,Quiz,25.0,1
+33,0,25,Group Assignment,18.0,1
+98,0,24,Group Assignment,78.0,1
+83,0,24,Individual Assignment,35.0,1
+75,1,18,Group Assignment,53.0,0
+24,0,25,Group Assignment,17.0,1
+73,0,22,Individual Assignment,18.0,0
+34,0,23,Individual Assignment,61.0,1
+18,0,24,Quiz,26.0,1
+44,0,21,Group Assignment,26.0,1
+90,0,18,Forum,23.0,1
+73,0,22,Individual Assignment,24.0,1
+97,0,23,Forum,26.0,1
+50,0,21,Group Assignment,21.0,0
+94,0,23,Individual Assignment,32.0,1
+67,0,25,Group Assignment,38.0,0
+63,0,21,Forum,65.0,1
+56,1,25,Group Assignment,18.0,1
+71,0,20,Group Assignment,11.0,0
+59,0,18,Group Assignment,71.0,1
+66,1,20,Group Assignment,38.0,1
+40,0,20,Forum,23.0,1
+82,1,24,Individual Assignment,37.0,1
+84,1,18,Forum,42.0,0
+53,0,24,Group Assignment,29.0,0
+99,0,21,Individual Assignment,6.0,0
+5,1,25,Group Assignment,35.0,1
+80,0,19,Individual Assignment,24.0,1
+68,1,23,Forum,30.0,0
+69,0,18,Individual Assignment,18.0,0
+36,0,23,Individual Assignment,14.0,1
+85,0,18,Individual Assignment,43.0,1
+18,0,24,Individual Assignment,17.0,0
+65,0,18,Group Assignment,45.0,1
+67,0,25,Individual Assignment,92.0,0
+73,0,22,Group Assignment,61.0,0
+71,0,20,Individual Assignment,15.0,0
+73,0,22,Individual Assignment,22.0,0
+8,1,25,Group Assignment,35.0,0
+56,1,25,Group Assignment,48.0,1
+95,0,23,Forum,73.0,1
+10,0,21,Individual Assignment,26.0,1
+21,0,22,Quiz,21.0,0
+92,1,25,Forum,36.0,0
+83,0,24,Individual Assignment,19.0,1
+21,0,22,Forum,36.0,1
+45,0,22,Forum,39.0,1
+69,0,18,Group Assignment,26.0,1
+30,0,22,Quiz,17.0,1
+19,0,20,Forum,22.0,1
+10,0,21,Group Assignment,27.0,0
+5,1,25,Group Assignment,44.0,1
+59,0,18,Individual Assignment,27.0,1
+16,1,20,Forum,19.0,1
+31,1,19,Group Assignment,70.0,1
+67,0,25,Group Assignment,19.0,1
+16,1,20,Forum,40.0,1
+37,0,20,Quiz,18.0,1
+86,1,20,Group Assignment,36.0,1
+97,0,23,Group Assignment,35.0,1
+71,0,20,Forum,22.0,1
+20,0,20,Forum,24.0,1
+92,1,25,Group Assignment,20.0,0
+98,0,24,Group Assignment,24.0,1
+84,1,18,Group Assignment,49.0,1
+58,0,22,Individual Assignment,35.0,0
+13,0,20,Group Assignment,29.0,1
+31,1,19,Individual Assignment,25.0,0
+30,0,22,Group Assignment,28.0,1
+35,1,23,Group Assignment,74.0,1
+26,0,20,Forum,30.0,1
+55,1,25,Group Assignment,28.0,1
+49,1,23,Group Assignment,106.0,0
+44,0,21,Individual Assignment,40.0,0
+15,1,23,Group Assignment,47.0,0
+87,1,19,Forum,45.0,1
+61,1,19,Group Assignment,43.0,0
+57,1,19,Group Assignment,15.0,0
+10,0,21,Forum,20.0,1
+78,1,24,Individual Assignment,40.0,0
+46,0,22,Group Assignment,55.0,0
+40,0,20,Group Assignment,8.0,0
+95,0,23,Group Assignment,15.0,1
+3,1,22,Individual Assignment,13.0,1
+74,0,19,Group Assignment,17.0,0
+15,1,23,Forum,75.0,1
+13,0,20,Group Assignment,19.0,1
+97,0,23,Group Assignment,57.0,0
+60,1,22,Forum,50.0,0
+38,0,23,Individual Assignment,8.0,0
+29,0,23,Quiz,17.0,0
+12,0,21,Individual Assignment,26.0,0
+94,0,23,Individual Assignment,81.0,0
+69,0,18,Group Assignment,78.0,1
+14,1,19,Group Assignment,41.0,1
+7,0,25,Individual Assignment,17.0,1
+88,1,19,Forum,17.0,1
+21,0,22,Forum,15.0,1
+66,1,20,Group Assignment,54.0,0
+51,0,23,Forum,42.0,0
+70,1,21,Group Assignment,5.0,0
+97,0,23,Individual Assignment,15.0,0
+34,0,23,Group Assignment,54.0,1
+28,0,20,Group Assignment,40.0,1
+89,1,22,Group Assignment,33.0,1
+52,0,25,Individual Assignment,62.0,1
+53,0,24,Group Assignment,23.0,1
+60,1,22,Group Assignment,64.0,1
+77,1,23,Group Assignment,44.0,0
+100,0,21,Group Assignment,49.0,0
+62,1,22,Individual Assignment,6.0,0
+28,0,20,Individual Assignment,12.0,1
+85,0,18,Forum,32.0,1
+33,0,25,Individual Assignment,7.0,1
+77,1,23,Forum,35.0,0
+23,0,25,Group Assignment,31.0,0
+93,0,21,Forum,40.0,1
+28,0,20,Group Assignment,32.0,1
+12,0,21,Individual Assignment,11.0,1
+8,1,25,Individual Assignment,100.0,1
+33,0,25,Forum,30.0,1
+76,1,24,Group Assignment,18.0,0
+58,0,22,Group Assignment,56.0,0
+75,1,18,Group Assignment,5.0,1
+27,0,23,Group Assignment,27.0,1
+60,1,22,Individual Assignment,15.0,1
+31,1,19,Forum,23.0,0
+64,1,21,Group Assignment,65.0,0
+21,0,22,Individual Assignment,73.0,0
+48,0,21,Forum,22.0,0
+6,1,21,Individual Assignment,57.0,1
+44,0,21,Individual Assignment,30.0,0
+59,0,18,Group Assignment,14.0,0
+9,0,24,Quiz,25.0,1
+58,0,22,Individual Assignment,106.0,1
+17,0,20,Individual Assignment,90.0,1
+94,0,23,Group Assignment,18.0,1
+18,0,24,Individual Assignment,39.0,1
+45,0,22,Individual Assignment,49.0,1
+35,1,23,Forum,24.0,0
+69,0,18,Individual Assignment,56.0,0
+28,0,20,Individual Assignment,48.0,1
+37,0,20,Group Assignment,10.0,1
+12,0,21,Group Assignment,48.0,1
+55,1,25,Individual Assignment,58.0,1
+97,0,23,Forum,42.0,0
+79,0,20,Forum,24.0,0
+98,0,24,Forum,42.0,0
+56,1,25,Group Assignment,102.0,1
+15,1,23,Forum,23.0,0
+79,0,20,Forum,38.0,0
+48,0,21,Individual Assignment,48.0,1
+21,0,22,Individual Assignment,42.0,1
+13,0,20,Forum,30.0,1
+92,1,25,Individual Assignment,17.0,0
+66,1,20,Individual Assignment,19.0,0
+22,1,21,Group Assignment,39.0,1
+46,0,22,Forum,15.0,0
+78,1,24,Forum,45.0,0
+65,0,18,Group Assignment,49.0,1
+83,0,24,Forum,36.0,1
+93,0,21,Group Assignment,17.0,1
+72,1,19,Group Assignment,11.0,1
+39,1,24,Group Assignment,11.0,1
+89,1,22,Individual Assignment,81.0,1
+78,1,24,Group Assignment,19.0,0
+68,1,23,Quiz,33.0,0
+21,0,22,Forum,20.0,0
+77,1,23,Group Assignment,5.0,0
+47,0,19,Forum,34.0,0
+45,0,22,Group Assignment,21.0,0
+68,1,23,Group Assignment,74.0,0
+72,1,19,Individual Assignment,31.0,1
+19,0,20,Group Assignment,65.0,0
+33,0,25,Group Assignment,85.0,1
+92,1,25,Forum,50.0,0
+37,0,20,Group Assignment,52.0,1
+11,0,24,Quiz,8.0,1
+8,1,25,Quiz,34.0,0
+33,0,25,Individual Assignment,110.0,1
+79,0,20,Individual Assignment,35.0,1
+31,1,19,Forum,53.0,0
+53,0,24,Group Assignment,38.0,1
+22,1,21,Individual Assignment,12.0,1
+46,0,22,Individual Assignment,44.0,1
+13,0,20,Group Assignment,30.0,0
+72,1,19,Forum,29.0,1
+49,1,23,Quiz,28.0,1
+50,0,21,Forum,13.0,1
+52,0,25,Group Assignment,23.0,1
+36,0,23,Individual Assignment,29.0,1
+81,0,19,Group Assignment,17.0,0
+24,0,25,Group Assignment,42.0,1
+76,1,24,Forum,50.0,1
+15,1,23,Group Assignment,23.0,0
+22,1,21,Group Assignment,35.0,1
+68,1,23,Individual Assignment,17.0,1
+16,1,20,Forum,26.0,1
+96,0,25,Individual Assignment,64.0,1
+91,1,22,Individual Assignment,15.0,1
+36,0,23,Group Assignment,41.0,1
+100,0,21,Forum,12.0,0
+26,0,20,Group Assignment,11.0,1
+65,0,18,Forum,27.0,1
+42,1,18,Forum,11.0,1
+96,0,25,Group Assignment,30.0,0
+32,0,23,Quiz,27.0,0
+64,1,21,Group Assignment,35.0,0
+67,0,25,Quiz,21.0,0
+79,0,20,Group Assignment,55.0,0
+62,1,22,Individual Assignment,18.0,1
+6,1,21,Group Assignment,12.0,1
+29,0,23,Group Assignment,11.0,1
+89,1,22,Group Assignment,81.0,1
+8,1,25,Group Assignment,63.0,1
+89,1,22,Forum,23.0,1
+42,1,18,Forum,64.0,1
+5,1,25,Individual Assignment,57.0,1
+57,1,19,Quiz,22.0,0
+2,1,23,Individual Assignment,35.0,0
+17,0,20,Individual Assignment,22.0,1
+13,0,20,Individual Assignment,38.0,1
+72,1,19,Group Assignment,51.0,1
+93,0,21,Individual Assignment,39.0,1
+37,0,20,Forum,18.0,1
+38,0,23,Group Assignment,30.0,1
+24,0,25,Group Assignment,28.0,0
+42,1,18,Group Assignment,54.0,1
+63,0,21,Group Assignment,26.0,1
+95,0,23,Individual Assignment,36.0,0
+7,0,25,Forum,21.0,1
+62,1,22,Group Assignment,8.0,0
+81,0,19,Group Assignment,42.0,1
+95,0,23,Group Assignment,51.0,0
+38,0,23,Group Assignment,72.0,0
+35,1,23,Forum,35.0,0
+96,0,25,Individual Assignment,29.0,1
+47,0,19,Individual Assignment,87.0,0
+100,0,21,Individual Assignment,38.0,0
+34,0,23,Individual Assignment,9.0,1
+23,0,25,Group Assignment,35.0,1
+35,1,23,Group Assignment,22.0,0
+9,0,24,Forum,28.0,0
+98,0,24,Individual Assignment,40.0,0
+85,0,18,Individual Assignment,23.0,1
+8,1,25,Individual Assignment,15.0,0
+3,1,22,Individual Assignment,25.0,1
+42,1,18,Quiz,43.0,1
+10,0,21,Group Assignment,48.0,0
+69,0,18,Forum,32.0,1
+88,1,19,Group Assignment,68.0,1
+32,0,23,Forum,29.0,1
+27,0,23,Group Assignment,23.0,1
+23,0,25,Quiz,19.0,1
+21,0,22,Individual Assignment,22.0,1
+6,1,21,Individual Assignment,10.0,1
+71,0,20,Group Assignment,31.0,1
+61,1,19,Forum,58.0,0
+86,1,20,Forum,49.0,1
+69,0,18,Forum,34.0,1
+64,1,21,Quiz,17.0,0
+42,1,18,Group Assignment,12.0,1
+18,0,24,Forum,28.0,1
+23,0,25,Forum,9.0,0
+47,0,19,Individual Assignment,17.0,1
+31,1,19,Forum,73.0,0
+86,1,20,Group Assignment,9.0,1
+58,0,22,Group Assignment,51.0,1
+39,1,24,Individual Assignment,79.0,1
+47,0,19,Quiz,29.0,0
+63,0,21,Individual Assignment,42.0,1
+18,0,24,Forum,51.0,0
+11,0,24,Individual Assignment,33.0,1
+76,1,24,Forum,30.0,1
+93,0,21,Quiz,45.0,1
+61,1,19,Group Assignment,97.0,1
+53,0,24,Group Assignment,70.0,1
+99,0,21,Forum,25.0,0
+86,1,20,Forum,12.0,1
+52,0,25,Group Assignment,27.0,1
+22,1,21,Forum,34.0,1
+53,0,24,Individual Assignment,37.0,1
+19,0,20,Individual Assignment,15.0,0
+87,1,19,Group Assignment,47.0,0
+64,1,21,Individual Assignment,63.0,1
+20,0,20,Group Assignment,28.0,1
+34,0,23,Quiz,54.0,1
+7,0,25,Group Assignment,70.0,0
+32,0,23,Forum,38.0,1
+48,0,21,Group Assignment,24.0,0
+72,1,19,Group Assignment,54.0,1
+49,1,23,Group Assignment,6.0,1
+67,0,25,Group Assignment,33.0,1
+7,0,25,Group Assignment,27.0,1
+27,0,23,Individual Assignment,49.0,1
+84,1,18,Group Assignment,12.0,0
+97,0,23,Group Assignment,25.0,0
+69,0,18,Individual Assignment,8.0,1
+96,0,25,Forum,21.0,0
+14,1,19,Quiz,58.0,1
+4,1,21,Individual Assignment,57.0,1
+38,0,23,Group Assignment,75.0,0
+66,1,20,Individual Assignment,48.0,1
+76,1,24,Group Assignment,15.0,0
+51,0,23,Group Assignment,34.0,1
+17,0,20,Group Assignment,24.0,0
+2,1,23,Individual Assignment,84.0,1
+81,0,19,Group Assignment,72.0,0
+87,1,19,Group Assignment,39.0,1
+41,1,24,Individual Assignment,60.0,0
+30,0,22,Group Assignment,31.0,1
+57,1,19,Forum,11.0,1
+39,1,24,Individual Assignment,58.0,1
+64,1,21,Forum,69.0,0
+82,1,24,Forum,29.0,0
+18,0,24,Group Assignment,46.0,0
+76,1,24,Individual Assignment,27.0,1
+28,0,20,Group Assignment,9.0,1
+47,0,19,Forum,20.0,1
+42,1,18,Individual Assignment,19.0,1
+26,0,20,Forum,31.0,1
+54,0,20,Group Assignment,12.0,1
+19,0,20,Individual Assignment,35.0,1
+2,1,23,Group Assignment,27.0,0
+10,0,21,Group Assignment,64.0,1
+30,0,22,Forum,23.0,1
+49,1,23,Group Assignment,7.0,1
+89,1,22,Group Assignment,46.0,1
+63,0,21,Group Assignment,21.0,1
+32,0,23,Group Assignment,47.0,0
+20,0,20,Quiz,31.0,1
+64,1,21,Individual Assignment,28.0,0
+19,0,20,Forum,48.0,0
+14,1,19,Group Assignment,52.0,1
+79,0,20,Group Assignment,27.0,1
+74,0,19,Group Assignment,43.0,1
+87,1,19,Individual Assignment,95.0,1
+79,0,20,Group Assignment,36.0,0
+23,0,25,Group Assignment,45.0,1
+27,0,23,Forum,20.0,1
+58,0,22,Forum,28.0,0
+52,0,25,Forum,54.0,1
+33,0,25,Group Assignment,24.0,1
+3,1,22,Individual Assignment,15.0,1
+89,1,22,Group Assignment,61.0,0
+51,0,23,Group Assignment,29.0,0
+81,0,19,Individual Assignment,27.0,0
+71,0,20,Group Assignment,28.0,0
+22,1,21,Quiz,37.0,0
+9,0,24,Group Assignment,62.0,0
+79,0,20,Individual Assignment,60.0,0
+85,0,18,Quiz,49.0,1
+20,0,20,Group Assignment,35.0,1
+89,1,22,Individual Assignment,15.0,1
+21,0,22,Group Assignment,55.0,0
+46,0,22,Group Assignment,55.0,0
+93,0,21,Forum,49.0,1
+10,0,21,Forum,38.0,0
+42,1,18,Group Assignment,9.0,1
+38,0,23,Group Assignment,30.0,1
+71,0,20,Individual Assignment,28.0,0
+54,0,20,Group Assignment,42.0,1
+83,0,24,Group Assignment,27.0,1
+79,0,20,Forum,25.0,0
+27,0,23,Group Assignment,29.0,0
+30,0,22,Group Assignment,28.0,0
+27,0,23,Group Assignment,44.0,0
+9,0,24,Individual Assignment,12.0,1
+45,0,22,Individual Assignment,82.0,1
+61,1,19,Individual Assignment,50.0,0
+48,0,21,Group Assignment,59.0,0
+46,0,22,Group Assignment,32.0,1
+11,0,24,Forum,28.0,0
+59,0,18,Individual Assignment,26.0,1
+84,1,18,Quiz,58.0,1
+29,0,23,Group Assignment,16.0,1
+73,0,22,Group Assignment,57.0,0
+93,0,21,Group Assignment,25.0,1
+52,0,25,Group Assignment,19.0,1
+91,1,22,Forum,14.0,1
+13,0,20,Forum,20.0,1
+40,0,20,Group Assignment,57.0,1
+57,1,19,Individual Assignment,34.0,0
+93,0,21,Individual Assignment,48.0,1
+45,0,22,Group Assignment,74.0,1
+76,1,24,Individual Assignment,59.0,0
+79,0,20,Group Assignment,19.0,0
+69,0,18,Quiz,44.0,1
+12,0,21,Forum,64.0,0
+96,0,25,Group Assignment,72.0,1
+84,1,18,Group Assignment,51.0,0
+26,0,20,Individual Assignment,58.0,1
+81,0,19,Group Assignment,8.0,1
+62,1,22,Forum,46.0,0
+28,0,20,Group Assignment,39.0,1
+64,1,21,Group Assignment,33.0,0
+9,0,24,Individual Assignment,36.0,1
+33,0,25,Individual Assignment,13.0,1
+52,0,25,Individual Assignment,75.0,1
+3,1,22,Group Assignment,24.0,1
+28,0,20,Individual Assignment,42.0,1
+67,0,25,Forum,18.0,0
+88,1,19,Group Assignment,90.0,0
+42,1,18,Individual Assignment,33.0,0
+81,0,19,Forum,29.0,1
+85,0,18,Group Assignment,57.0,1
+12,0,21,Forum,33.0,0
+81,0,19,Individual Assignment,38.0,0
+63,0,21,Quiz,46.0,1
+86,1,20,Quiz,17.0,1
+77,1,23,Individual Assignment,25.0,0
+11,0,24,Group Assignment,54.0,1
+26,0,20,Group Assignment,61.0,0
+7,0,25,Group Assignment,40.0,1
+48,0,21,Forum,46.0,1
+32,0,23,Group Assignment,50.0,1
+63,0,21,Forum,34.0,1
+58,0,22,Group Assignment,53.0,0
+45,0,22,Quiz,23.0,1
+60,1,22,Individual Assignment,79.0,0
+44,0,21,Quiz,28.0,0
+6,1,21,Group Assignment,34.0,1
+33,0,25,Forum,58.0,0
+3,1,22,Group Assignment,14.0,1
+26,0,20,Group Assignment,40.0,1
+9,0,24,Group Assignment,51.0,0
+78,1,24,Quiz,32.0,0
+97,0,23,Individual Assignment,26.0,0
+8,1,25,Individual Assignment,32.0,0
+26,0,20,Individual Assignment,32.0,1
+64,1,21,Group Assignment,34.0,0
+88,1,19,Individual Assignment,21.0,0
+45,0,22,Group Assignment,37.0,1
+68,1,23,Individual Assignment,39.0,0
+65,0,18,Forum,6.0,0
+77,1,23,Individual Assignment,50.0,0
+79,0,20,Group Assignment,86.0,0
+94,0,23,Individual Assignment,17.0,1
+100,0,21,Group Assignment,12.0,0
+11,0,24,Individual Assignment,21.0,0
+28,0,20,Individual Assignment,77.0,1
+24,0,25,Forum,21.0,1
+28,0,20,Forum,19.0,1
+20,0,20,Group Assignment,56.0,1
+90,0,18,Group Assignment,36.0,1
+84,1,18,Group Assignment,39.0,1
+56,1,25,Forum,9.0,1
+16,1,20,Group Assignment,50.0,1
+45,0,22,Individual Assignment,33.0,0
+79,0,20,Individual Assignment,45.0,0
+24,0,25,Group Assignment,36.0,1
+17,0,20,Quiz,6.0,1
+15,1,23,Group Assignment,60.0,1
+11,0,24,Group Assignment,71.0,1
+83,0,24,Quiz,33.0,0
+8,1,25,Individual Assignment,30.0,0
+22,1,21,Individual Assignment,45.0,1
+22,1,21,Individual Assignment,7.0,1
+89,1,22,Quiz,36.0,0
+68,1,23,Individual Assignment,39.0,0
+35,1,23,Individual Assignment,91.0,0
+81,0,19,Forum,44.0,0
+39,1,24,Group Assignment,37.0,1
+86,1,20,Individual Assignment,110.0,0
+33,0,25,Forum,11.0,1
+98,0,24,Forum,15.0,1
+91,1,22,Individual Assignment,28.0,1
+85,0,18,Forum,23.0,1
+28,0,20,Quiz,30.0,1
+50,0,21,Forum,14.0,0
+20,0,20,Individual Assignment,46.0,1
+75,1,18,Group Assignment,83.0,1
+27,0,23,Quiz,34.0,1
+15,1,23,Individual Assignment,48.0,1
+67,0,25,Group Assignment,57.0,0
+24,0,25,Group Assignment,47.0,0
+52,0,25,Group Assignment,65.0,0
+77,1,23,Forum,46.0,1
+55,1,25,Forum,35.0,1
+21,0,22,Group Assignment,82.0,1
+100,0,21,Individual Assignment,106.0,1
+21,0,22,Group Assignment,31.0,0
+94,0,23,Group Assignment,23.0,1
+73,0,22,Forum,26.0,0
+44,0,21,Group Assignment,47.0,0
+54,0,20,Individual Assignment,35.0,1
+14,1,19,Individual Assignment,27.0,1
+62,1,22,Group Assignment,40.0,0
+46,0,22,Group Assignment,50.0,0
+17,0,20,Individual Assignment,27.0,0
+74,0,19,Forum,5.0,0
+81,0,19,Forum,30.0,1
+67,0,25,Forum,11.0,0
+54,0,20,Forum,27.0,1
+11,0,24,Individual Assignment,20.0,1
+57,1,19,Group Assignment,49.0,0
+48,0,21,Individual Assignment,26.0,0
+57,1,19,Individual Assignment,21.0,1
+5,1,25,Group Assignment,21.0,1
+86,1,20,Forum,42.0,0
+26,0,20,Individual Assignment,45.0,0
+61,1,19,Forum,14.0,0
+49,1,23,Group Assignment,37.0,1
+52,0,25,Group Assignment,71.0,1
+20,0,20,Group Assignment,51.0,1
+62,1,22,Group Assignment,48.0,0
+75,1,18,Individual Assignment,76.0,1
+27,0,23,Group Assignment,26.0,1
+44,0,21,Individual Assignment,28.0,1
+55,1,25,Group Assignment,10.0,1
+8,1,25,Group Assignment,41.0,0
+17,0,20,Group Assignment,66.0,1
+23,0,25,Forum,15.0,1
+48,0,21,Individual Assignment,66.0,0
+39,1,24,Forum,24.0,1
+69,0,18,Individual Assignment,40.0,1
+32,0,23,Individual Assignment,89.0,0
+52,0,25,Individual Assignment,115.0,1
+22,1,21,Group Assignment,25.0,0
+40,0,20,Quiz,58.0,1
+73,0,22,Forum,53.0,0
+38,0,23,Forum,32.0,1
+3,1,22,Forum,49.0,1
+31,1,19,Individual Assignment,36.0,1
+100,0,21,Quiz,36.0,0
+82,1,24,Forum,22.0,0
+65,0,18,Quiz,31.0,0
+30,0,22,Individual Assignment,79.0,1
+24,0,25,Individual Assignment,57.0,0
+99,0,21,Group Assignment,64.0,0
+27,0,23,Individual Assignment,44.0,1
+31,1,19,Group Assignment,34.0,0
+24,0,25,Quiz,20.0,1
+75,1,18,Forum,22.0,1
+24,0,25,Individual Assignment,44.0,0
+44,0,21,Group Assignment,27.0,0
+87,1,19,Group Assignment,14.0,1
+38,0,23,Forum,34.0,0
+85,0,18,Group Assignment,13.0,1
+2,1,23,Quiz,49.0,0
+31,1,19,Individual Assignment,24.0,0
+72,1,19,Quiz,49.0,1
+67,0,25,Individual Assignment,18.0,1
+76,1,24,Forum,36.0,0
+100,0,21,Forum,13.0,0
+96,0,25,Group Assignment,48.0,1
+14,1,19,Group Assignment,32.0,0
+56,1,25,Individual Assignment,24.0,1
+49,1,23,Forum,44.0,1
+50,0,21,Individual Assignment,58.0,1
+18,0,24,Group Assignment,34.0,1
+19,0,20,Forum,13.0,0
+69,0,18,Forum,52.0,1
+9,0,24,Forum,18.0,1
+45,0,22,Forum,55.0,1
+2,1,23,Group Assignment,24.0,1
+41,1,24,Forum,42.0,1
+75,1,18,Individual Assignment,53.0,1
+23,0,25,Group Assignment,85.0,0
+9,0,24,Group Assignment,66.0,1
+38,0,23,Forum,40.0,1
+91,1,22,Forum,19.0,1
+97,0,23,Individual Assignment,30.0,0
+7,0,25,Forum,33.0,1
+93,0,21,Group Assignment,64.0,1
+94,0,23,Forum,38.0,1
+7,0,25,Group Assignment,13.0,1
+61,1,19,Forum,17.0,0
+36,0,23,Quiz,17.0,0
+23,0,25,Individual Assignment,35.0,1
+82,1,24,Group Assignment,24.0,0
+34,0,23,Group Assignment,38.0,1
+19,0,20,Quiz,17.0,0
+53,0,24,Individual Assignment,31.0,1
+13,0,20,Forum,50.0,1
+94,0,23,Forum,49.0,1
+97,0,23,Group Assignment,41.0,1
+13,0,20,Individual Assignment,54.0,1
+7,0,25,Individual Assignment,40.0,1
+63,0,21,Group Assignment,21.0,1
+74,0,19,Group Assignment,35.0,0
+79,0,20,Individual Assignment,14.0,0
+31,1,19,Group Assignment,42.0,0
+35,1,23,Quiz,32.0,0
+85,0,18,Group Assignment,32.0,1
+58,0,22,Individual Assignment,54.0,1
+4,1,21,Individual Assignment,6.0,1
+6,1,21,Forum,45.0,1
+13,0,20,Group Assignment,6.0,1
+61,1,19,Individual Assignment,32.0,0
+64,1,21,Forum,20.0,0
+61,1,19,Group Assignment,22.0,0
+82,1,24,Group Assignment,34.0,0
+84,1,18,Individual Assignment,35.0,0
+41,1,24,Individual Assignment,8.0,1
+38,0,23,Quiz,20.0,1
+6,1,21,Forum,25.0,1
+37,0,20,Forum,21.0,1
+95,0,23,Individual Assignment,21.0,1
+77,1,23,Forum,33.0,0
+64,1,21,Group Assignment,8.0,1
+88,1,19,Individual Assignment,41.0,0
+41,1,24,Group Assignment,40.0,1
+61,1,19,Quiz,50.0,0
+41,1,24,Forum,35.0,1
+64,1,21,Individual Assignment,28.0,0
+94,0,23,Group Assignment,72.0,1
+36,0,23,Group Assignment,42.0,1
+28,0,20,Forum,44.0,1
+90,0,18,Group Assignment,15.0,0
+36,0,23,Forum,45.0,1
+14,1,19,Group Assignment,37.0,1
+31,1,19,Individual Assignment,36.0,1
+78,1,24,Group Assignment,50.0,0
+11,0,24,Individual Assignment,30.0,1
+91,1,22,Group Assignment,57.0,1
+71,0,20,Forum,30.0,0
+6,1,21,Group Assignment,24.0,1
+57,1,19,Group Assignment,24.0,1
+85,0,18,Group Assignment,57.0,0
+79,0,20,Quiz,60.0,0
+67,0,25,Individual Assignment,18.0,1
+19,0,20,Group Assignment,23.0,1
+23,0,25,Individual Assignment,5.0,0
+68,1,23,Individual Assignment,83.0,1
+78,1,24,Forum,6.0,0
+31,1,19,Group Assignment,68.0,1
+84,1,18,Individual Assignment,47.0,0
+66,1,20,Group Assignment,28.0,0
+16,1,20,Group Assignment,50.0,1
+13,0,20,Individual Assignment,37.0,0
+17,0,20,Forum,20.0,0
+7,0,25,Forum,9.0,1
+58,0,22,Quiz,12.0,0
+27,0,23,Individual Assignment,84.0,0
+30,0,22,Individual Assignment,28.0,0
+54,0,20,Individual Assignment,86.0,0
+20,0,20,Forum,39.0,1
+90,0,18,Forum,30.0,0
+17,0,20,Forum,62.0,0
+99,0,21,Individual Assignment,74.0,1
+87,1,19,Group Assignment,74.0,1
+18,0,24,Forum,66.0,1
+19,0,20,Individual Assignment,39.0,1
+20,0,20,Individual Assignment,69.0,0
+48,0,21,Individual Assignment,46.0,1
+22,1,21,Forum,51.0,0
+24,0,25,Forum,7.0,1
+65,0,18,Individual Assignment,50.0,1
+47,0,19,Group Assignment,23.0,0
+78,1,24,Individual Assignment,51.0,1
+2,1,23,Individual Assignment,29.0,0
+16,1,20,Group Assignment,6.0,1
+50,0,21,Individual Assignment,48.0,1
+11,0,24,Forum,36.0,1
+76,1,24,Group Assignment,102.0,1
+68,1,23,Group Assignment,43.0,0
+11,0,24,Forum,25.0,1
+46,0,22,Individual Assignment,48.0,0
+73,0,22,Group Assignment,52.0,0
+85,0,18,Individual Assignment,29.0,1
+32,0,23,Group Assignment,30.0,1
+5,1,25,Quiz,14.0,1
+41,1,24,Group Assignment,51.0,1
+39,1,24,Individual Assignment,52.0,1
+94,0,23,Group Assignment,39.0,0
+86,1,20,Individual Assignment,18.0,0
+16,1,20,Quiz,66.0,1
+53,0,24,Group Assignment,25.0,1
+23,0,25,Individual Assignment,8.0,0
+23,0,25,Forum,29.0,1
+84,1,18,Forum,63.0,0
+89,1,22,Individual Assignment,43.0,1
+5,1,25,Forum,42.0,1
+29,0,23,Group Assignment,23.0,0
+89,1,22,Forum,36.0,1
+55,1,25,Forum,52.0,0
+100,0,21,Group Assignment,66.0,1
+56,1,25,Forum,77.0,0
+2,1,23,Group Assignment,45.0,0
+87,1,19,Group Assignment,44.0,1
+29,0,23,Individual Assignment,42.0,1
+83,0,24,Individual Assignment,29.0,1
+19,0,20,Group Assignment,36.0,0
+90,0,18,Individual Assignment,26.0,1
+73,0,22,Group Assignment,73.0,0
+60,1,22,Group Assignment,26.0,0
+6,1,21,Group Assignment,61.0,1
+56,1,25,Individual Assignment,46.0,0
+16,1,20,Individual Assignment,33.0,1
+36,0,23,Forum,47.0,1
+10,0,21,Individual Assignment,19.0,1
+96,0,25,Group Assignment,71.0,1
+39,1,24,Group Assignment,57.0,1
+71,0,20,Quiz,12.0,1
+41,1,24,Quiz,18.0,1
+95,0,23,Group Assignment,55.0,0
+30,0,22,Forum,44.0,1
+1,0,23,Forum,10.0,1
+18,0,24,Group Assignment,28.0,0
+96,0,25,Individual Assignment,71.0,1
+84,1,18,Individual Assignment,28.0,0
+51,0,23,Quiz,29.0,1
+66,1,20,Quiz,26.0,0
+19,0,20,Group Assignment,38.0,0
+72,1,19,Individual Assignment,48.0,0
+36,0,23,Group Assignment,44.0,1
+8,1,25,Group Assignment,30.0,0
+12,0,21,Group Assignment,82.0,1
+100,0,21,Forum,41.0,0
+52,0,25,Quiz,8.0,1
+8,1,25,Forum,32.0,0
+42,1,18,Forum,48.0,1
+71,0,20,Individual Assignment,19.0,1
+37,0,20,Group Assignment,44.0,0
+20,0,20,Forum,50.0,1
+76,1,24,Quiz,29.0,1
+95,0,23,Forum,38.0,0
+13,0,20,Group Assignment,106.0,1
+33,0,25,Individual Assignment,18.0,1
+12,0,21,Group Assignment,59.0,0
+11,0,24,Group Assignment,43.0,1
+65,0,18,Individual Assignment,15.0,1
+68,1,23,Forum,46.0,0
+74,0,19,Group Assignment,14.0,1
+64,1,21,Individual Assignment,58.0,0
+59,0,18,Group Assignment,21.0,1
+27,0,23,Individual Assignment,33.0,0
+12,0,21,Group Assignment,41.0,0
+31,1,19,Group Assignment,14.0,0
+76,1,24,Individual Assignment,29.0,1
+5,1,25,Group Assignment,27.0,0
+87,1,19,Quiz,32.0,1
+72,1,19,Individual Assignment,42.0,1
+51,0,23,Individual Assignment,23.0,0

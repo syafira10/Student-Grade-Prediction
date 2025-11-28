@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grade Predictor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .student-selector {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .student-selector select {
+            width: 100%;
+            padding: 12px 16px;
+            border: 2px solid #e1e5e9;
+            border-radius: 12px;
+            font-size: 16px;
+            background: white;
+            color: #333;
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .student-selector::after {
+            content: '▼';
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #666;
+        }
+
+        .info-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-label {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .info-value {
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .course-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #e1e5e9;
+        }
+
+        .course-item:last-child {
+            border-bottom: none;
+        }
+
+        .course-name {
+            color: #333;
+            font-weight: 500;
+        }
+
+        .course-grade {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .activity-summary {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .activity-item {
+            flex: 1;
+        }
+
+        .activity-number {
+            font-size: 24px;
+            font-weight: 700;
+            color: #4caf50;
+            display: block;
+        }
+
+        .activity-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .predict-btn {
+            width: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+
+        .predict-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .predict-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .prediction-result {
+            background: linear-gradient(135deg, #ff6b6b 0%, #ffa500 100%);
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
+
+        .prediction-result.good {
+            background: linear-gradient(135deg, #4caf50 0%, #8bc34a 100%);
+        }
+
+        .prediction-title {
+            font-size: 14px;
+            opacity: 0.9;
+            margin-bottom: 8px;
+        }
+
+        .prediction-grade {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .prediction-status {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .prediction-details {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .prediction-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .prediction-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .confidence-bar {
+            width: 100%;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 3px;
+            margin-top: 8px;
+            overflow: hidden;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: white;
+            border-radius: 3px;
+            transition: width 0.5s ease;
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #999;
+            text-align: center;
+            margin-top: 15px;
+            line-height: 1.4;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 15px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .error {
+            background: #ffebee;
+            border: 1px solid #f44336;
+            color: #c62828;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div style="font-size: 30px; margin-bottom: 10px;">🎓</div>
+            <h1>Student Grade Predictor</h1>
+            <p>Select a student to predict their next semester performance</p>
+        </div>
+
+        <div class="content">
+            <!-- Student Selection -->
+            <div class="section">
+                <h3>📚 Select Student:</h3>
+                <div class="student-selector">
+                    <select id="studentSelector">
+                        <option value="">Loading students...</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Student Information -->
+            <div id="studentInfo" class="hidden">
+                <div class="section">
+                    <h3>Student Information</h3>
+                    <div class="info-card">
+                        <div class="info-row">
+                            <span class="info-label">Age:</span>
+                            <span class="info-value" id="studentAge">-</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Gender:</span>
+                            <span class="info-value" id="studentGender">-</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value" id="studentEmail">-</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Average Past Grade:</span>
+                            <span class="info-value" id="studentGrade">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enrolled Courses -->
+                <div class="section">
+                    <h3>📖 Enrolled Courses</h3>
+                    <div class="info-card" id="coursesList">
+                        <!-- Courses will be populated here -->
+                    </div>
+                </div>
+
+                <!-- Activity Summary -->
+                <div class="section">
+                    <h3>⏰ Activity Summary</h3>
+                    <div class="info-card">
+                        <div class="activity-summary">
+                            <div class="activity-item">
+                                <span class="activity-number" id="activityCount">-</span>
+                                <div class="activity-label">Number of Activities</div>
+                            </div>
+                            <div class="activity-item">
+                                <span class="activity-number" id="hoursSpent">-</span>
+                                <div class="activity-label">Total Time Spent</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Predict Button -->
+                <button class="predict-btn" id="predictBtn" onclick="predictGrade()">
+                    Predict Next Semester Grade
+                </button>
+            </div>
+
+            <!-- Loading -->
+            <div id="loading" class="loading hidden">
+                <div class="spinner"></div>
+                <p>Analyzing student data...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div id="errorMessage" class="error hidden"></div>
+
+            <!-- Prediction Results -->
+            <div id="predictionResult" class="hidden">
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentStudentData = null;
+
+        // Load students on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadStudents();
+        });
+
+        async function loadStudents() {
+            try {
+                const response = await fetch('/api/students/');
+                const data = await response.json();
+                
+                const selector = document.getElementById('studentSelector');
+                selector.innerHTML = '<option value="">Select a student...</option>';
+                
+                data.students.forEach(student => {
+                    const option = document.createElement('option');
+                    option.value = student;
+                    option.textContent = student;
+                    selector.appendChild(option);
+                });
+
+                selector.addEventListener('change', handleStudentSelection);
+            } catch (error) {
+                showError('Failed to load students: ' + error.message);
+            }
+        }
+
+        function handleStudentSelection(event) {
+            const studentName = event.target.value;
+            if (studentName) {
+                loadStudentInfo(studentName);
+            } else {
+                hideStudentInfo();
+            }
+        }
+
+        async function loadStudentInfo(studentName) {
+            showLoading();
+            hideError();
+            
+            try {
+                const response = await fetch('/api/predict/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRFToken': getCookie('csrftoken')
+                    },
+                    body: JSON.stringify({ student_name: studentName })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to load student data');
+                }
+
+                const data = await response.json();
+                currentStudentData = data;
+                displayStudentInfo(data.student_info);
+                hideLoading();
+                
+            } catch (error) {
+                hideLoading();
+                showError('Failed to load student information: ' + error.message);
+            }
+        }
+
+        function displayStudentInfo(studentInfo) {
+            // Update student information
+            document.getElementById('studentAge').textContent = studentInfo.age + ' years';
+            document.getElementById('studentGender').textContent = studentInfo.gender;
+            document.getElementById('studentEmail').textContent = studentInfo.email;
+            document.getElementById('studentGrade').textContent = 
+                studentInfo.avg_past_grade ? studentInfo.avg_past_grade.toFixed(1) + '%' : 'N/A';
+
+            // Update courses
+            const coursesList = document.getElementById('coursesList');
+            coursesList.innerHTML = '';
+            
+            if (studentInfo.courses && Object.keys(studentInfo.courses).length > 0) {
+                for (const [courseName, grade] of Object.entries(studentInfo.courses)) {
+                    const courseItem = document.createElement('div');
+                    courseItem.className = 'course-item';
+                    courseItem.innerHTML = `
+                        <span class="course-name">${courseName}</span>
+                        <span class="course-grade">${grade}%</span>
+                    `;
+                    coursesList.appendChild(courseItem);
+                }
+            } else {
+                coursesList.innerHTML = '<div class="course-item"><span class="course-name">No enrolled courses found</span></div>';
+            }
+
+            // Update activity summary
+            document.getElementById('activityCount').textContent = studentInfo.total_activities || 0;
+            document.getElementById('hoursSpent').textContent = 
+                studentInfo.total_hours ? studentInfo.total_hours.toFixed(1) + ' hours' : '0 hours';
+
+            // Show student info section
+            document.getElementById('studentInfo').classList.remove('hidden');
+        }
+
+        function predictGrade() {
+            if (!currentStudentData) return;
+
+            showLoading();
+            hideError();
+            hidePredictionResult();
+
+            // Simulate API call delay for better UX
+            setTimeout(() => {
+                displayPredictionResult(currentStudentData.prediction);
+                hideLoading();
+            }, 1500);
+        }
+
+        function displayPredictionResult(prediction) {
+            const resultDiv = document.getElementById('predictionResult');
+            const isGood = !prediction.at_risk;
+            
+            resultDiv.className = isGood ? 'prediction-result good' : 'prediction-result';
+            resultDiv.innerHTML = `
+                <div class="prediction-title">🎯 Prediction Results</div>
+                <div class="prediction-grade">${prediction.predicted_grade}%</div>
+                <div class="prediction-status">
+                    ${prediction.at_risk ? '⚠️ At Risk of Failing' : '✅ On Track for Success'}
+                </div>
+                <div class="prediction-details">
+                    <div class="prediction-row">
+                        <span>Performance Level:</span>
+                        <span><strong>${prediction.performance_level}</strong></span>
+                    </div>
+                    <div class="prediction-row">
+                        <span>Prediction Confidence:</span>
+                        <span><strong>${prediction.confidence}%</strong></span>
+                    </div>
+                    <div class="confidence-bar">
+                        <div class="confidence-fill" style="width: ${prediction.confidence}%"></div>
+                    </div>
+                </div>
+                <div class="disclaimer">
+                    * This prediction is based on past performance, activity participation, and time investment patterns.
+                </div>
+            `;
+            
+            resultDiv.classList.remove('hidden');
+        }
+
+        function showLoading() {
+            document.getElementById('loading').classList.remove('hidden');
+        }
+
+        function hideLoading() {
+            document.getElementById('loading').classList.add('hidden');
+        }
+
+        function showError(message) {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.textContent = message;
+            errorDiv.classList.remove('hidden');
+        }
+
+        function hideError() {
+            document.getElementById('errorMessage').classList.add('hidden');
+        }
+
+        function hideStudentInfo() {
+            document.getElementById('studentInfo').classList.add('hidden');
+            hidePredictionResult();
+        }
+
+        function hidePredictionResult() {
+            document.getElementById('predictionResult').classList.add('hidden');
+        }
+
+        function getCookie(name) {
+            let cookieValue = null;
+            if (document.cookie && document.cookie !== '') {
+                const cookies = document.cookie.split(';');
+                for (let i = 0; i < cookies.length; i++) {
+                    const cookie = cookies[i].trim();
+                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                        break;
+                    }
+                }
+            }
+            return cookieValue;
+        }
+    </script>
+</body>
+</html>

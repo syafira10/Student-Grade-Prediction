@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Analytics Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #9b59b6, #e74c3c, #3498db);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 2px solid transparent;
+            border-radius: 15px;
+            padding: 25px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 15px;
+            padding: 2px;
+            background: linear-gradient(45deg, #9b59b6, #e74c3c, #3498db, #2ecc71);
+            mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #e74c3c, #c0392b);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .card-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .card-description {
+            color: #bdc3c7;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .card-button {
+            background: linear-gradient(45deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        .card-button:active {
+            transform: scale(0.95);
+        }
+
+        .card-button::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 5px;
+            height: 5px;
+            background: rgba(255, 255, 255, 0.5);
+            opacity: 0;
+            border-radius: 100%;
+            transform: scale(1, 1) translate(-50%, -50%);
+            transform-origin: 50% 50%;
+        }
+
+        .card-button:active::after {
+            animation: ripple 0.6s ease-out;
+        }
+
+        @keyframes ripple {
+            0% {
+                transform: scale(0, 0) translate(-50%, -50%);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(20, 20) translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .status-active {
+            background: rgba(46, 204, 113, 0.2);
+            color: #2ecc71;
+            border: 1px solid #2ecc71;
+        }
+
+        .status-development {
+            background: rgba(241, 196, 15, 0.2);
+            color: #f1c40f;
+            border: 1px solid #f1c40f;
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .main-title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="main-title">GROUP 5</h1>
+            <h2 class="subtitle">Dashboard</h2>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <div class="card-icon">📚</div>
+                <h3 class="card-title">Muhammad Habibi Dzikra (012202300044)</h3>
+                <p class="card-description">
+                    Predict which class can student succesfully get in based on their age and avarage prior grade
+                </p>
+                <a href="{% url 'prediction_habibi' %}" class="card-button">Masuk</a>
+            </div> 
+
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <div class="card-icon">🎯</div>
+                <h3 class="card-title">Kalvin Bernard Kabbi (012202300039)</h3>
+                <p class="card-description">
+                    Predict how long a student will likely spend on a learning activity (in minutes), based on the type of activity, the course, and the student’s ID.
+                </p>
+           
+                <a href="{% url 'prediction_kalvin' %}" class="card-button"">Masuk</a>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <div class="card-icon">⭐</div>
+                <h3 class="card-title">Nauval Haryadi (012202300091)</h3>
+                <p class="card-description">
+                    Prediction for Student Effectiveness, to find learning patterns from students activities and study time
+                </p>
+                <a class="card-button" href="{% url 'predict_view'%}">Masuk</a>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="feature-card">
+                <div class="card-icon">👤</div>    
+                <h3 class="card-title">Syafira Luthfi Masayu (012202300080)</h3>
+                <p class="card-description">
+                    Clustering untuk menemukan pola belajar dari aktivitas dan waktu belajar pilihan mahasiswa.
+                </p>
+                <a class="card-button warning" href="{% url 'grade_predictor' %}">Masuk</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openFeature(url) {
+            window.location.href = url; // Redirect to the URL
+            // Or use: window.open(url, '_blank'); // Opens in new tab
+        }
+
+        document.querySelectorAll('.card-button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log("Button clicked:", this.textContent);
+            });
+        });
+
+        // Animasi loading untuk card
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.feature-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = 'all 0.6s ease';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, index * 150);
+            });
+        });
+
+        // Efek particle background
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.style.position = 'fixed';
+            particle.style.width = '4px';
+            particle.style.height = '4px';
+            particle.style.background = 'rgba(255, 255, 255, 0.1)';
+            particle.style.borderRadius = '50%';
+            particle.style.pointerEvents = 'none';
+            particle.style.left = Math.random() * window.innerWidth + 'px';
+            particle.style.top = '-10px';
+            particle.style.zIndex = '-1';
+            
+            document.body.appendChild(particle);
+            
+            const duration = Math.random() * 3000 + 2000;
+            particle.animate([
+                { transform: 'translateY(-10px)', opacity: 0 },
+                { transform: `translateY(${window.innerHeight + 10}px)`, opacity: 1 }
+            ], {
+                duration: duration,
+                easing: 'linear'
+            }).onfinish = () => particle.remove();
+        }
+
+        // Buat particle setiap 500ms
+        setInterval(createParticle, 500);
+    </script>
+</body>
+</html>

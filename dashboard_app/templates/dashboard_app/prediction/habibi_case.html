@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Animated background particles */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 119, 198, 0.2) 0%, transparent 50%);
+            animation: float 20s ease-in-out infinite;
+            z-index: 0;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-20px) rotate(1deg); }
+            66% { transform: translateY(10px) rotate(-1deg); }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 40px;
+            box-shadow: 
+                0 20px 60px rgba(0, 0, 0, 0.1),
+                0 8px 32px rgba(0, 0, 0, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            animation: slideUp 0.8s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            color: #2d3748;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #718096;
+            font-size: 1rem;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        .prediction-form {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            margin-bottom: 24px;
+        }
+
+        .form-group {
+            position: relative;
+            animation: fadeInUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        .form-group:nth-child(1) { animation-delay: 0.1s; }
+        .form-group:nth-child(2) { animation-delay: 0.2s; }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #4a5568;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 16px 20px;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.8);
+            color: #2d3748;
+            font-weight: 500;
+        }
+
+        input[type="number"]:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+            background: white;
+            transform: translateY(-2px);
+        }
+
+        input[type="number"]:hover {
+            border-color: #cbd5e0;
+            transform: translateY(-1px);
+        }
+
+        #predictButton {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 18px 32px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top: 16px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        #predictButton::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s ease;
+        }
+
+        #predictButton:hover::before {
+            left: 100%;
+        }
+
+        #predictButton:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
+        }
+
+        #predictButton:active {
+            transform: translateY(-1px);
+        }
+
+        #predictButton.loading {
+            opacity: 0.8;
+            cursor: not-allowed;
+        }
+
+        .result-area {
+            padding: 24px;
+            background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+            border-radius: 16px;
+            border: 1px solid #81e6d9;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+            margin-top: 16px;
+        }
+
+        .result-area.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .prediction-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3748;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .class-prediction {
+            font-size: 2rem;
+            font-weight: 800;
+            color: #2b6cb0;
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 12px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        .probabilities-section {
+            margin-bottom: 24px;
+        }
+
+        .section-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #22543d;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .probability-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 16px;
+            margin-bottom: 8px;
+            background: rgba(255, 255, 255, 0.4);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .probability-item:hover {
+            background: rgba(255, 255, 255, 0.6);
+            transform: translateX(4px);
+        }
+
+        .class-label {
+            font-weight: 600;
+            color: #2d3748;
+        }
+
+        .probability-value {
+            font-weight: 700;
+            color: #22543d;
+        }
+
+        .probability-bar {
+            width: 100px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-left: 12px;
+        }
+
+        .probability-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #48bb78, #38a169);
+            border-radius: 3px;
+            transition: width 1s ease-out;
+        }
+
+        .metrics-section {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255, 255, 255, 0.5);
+        }
+
+        .accuracy-display {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #22543d;
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+            margin-right: 8px;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            margin-top: 16px;
+            padding: 16px;
+            background: linear-gradient(135deg, #fed7d7 0%, #feb2b2 100%);
+            border: 1px solid #fc8181;
+            border-radius: 12px;
+            color: #742a2a;
+            font-weight: 500;
+            display: none;
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes shake {
+            0%, 20%, 40%, 60%, 80%, 100% { transform: translateX(0); }
+            10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+        }
+
+        /* Responsive design */
+        @media (max-width: 480px) {
+            .container {
+                padding: 24px;
+                margin: 16px;
+            }
+            
+            h1 { font-size: 1.8rem; }
+            
+            input[type="number"] {
+                padding: 14px 16px;
+            }
+            
+            #predictButton {
+                padding: 16px 24px;
+            }
+
+            .probability-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            .probability-bar {
+                width: 100%;
+                margin-left: 0;
+            }
+        }
+
+        /* Accessibility improvements */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Student Performance Prediction</h1>
+        <p class="subtitle">Predict which class you can get admitted to based on your academic profile</p>
+
+        <form id="predictionForm" class="prediction-form">
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" value="18" min="15" max="30" required>
+            </div>
+
+            <div class="form-group">
+                <label for="avg_prior_grade">Average Prior Grade:</label>
+                <input type="number" id="avg_prior_grade" name="avg_prior_grade" value="25" min="0" max="100" step="0.1" required>
+            </div>
+
+            <button type="submit" id="predictButton">
+                Predict Grade
+            </button>
+        </form>
+
+        <div id="predictionResult" class="result-area">
+            <div class="prediction-title">Prediction: <span id="predictedClass">-</span></div>
+            
+            <div class="probabilities-section">
+                <div class="section-title">Probabilities for each class:</div>
+                <div id="probabilitiesList"></div>
+            </div>
+
+            <div class="metrics-section">
+                <div class="section-title">Model Metrics:</div>
+                <div class="accuracy-display">Accuracy: <span id="modelAccuracy">-</span></div>
+            </div>
+        </div>
+        
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <script>
+        document.getElementById('predictionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const button = document.getElementById('predictButton');
+            const resultArea = document.getElementById('predictionResult');
+            const errorMessage = document.getElementById('errorMessage');
+            
+            // Reset previous states
+            errorMessage.style.display = 'none';
+            resultArea.classList.remove('show');
+            
+            // Show loading state
+            button.innerHTML = '<span class="loading-spinner"></span>Analyzing...';
+            button.classList.add('loading');
+            button.disabled = true;
+            
+            // Get form data
+            const age = parseInt(document.getElementById('age').value);
+            const avgGrade = parseFloat(document.getElementById('avg_prior_grade').value);
+            
+            // Simulate API call with class prediction logic
+            setTimeout(() => {
+                try {
+                    // Simulate class prediction based on grade ranges
+                    let predictedClass;
+                    let probabilities = [0, 0, 0, 0, 0];
+                    
+                    if (avgGrade >= 85) {
+                        predictedClass = 1;
+                        probabilities = [95.0, 3.0, 1.5, 0.3, 0.2];
+                    } else if (avgGrade >= 70) {
+                        predictedClass = 2;
+                        probabilities = [15.0, 70.0, 12.0, 2.5, 0.5];
+                    } else if (avgGrade >= 55) {
+                        predictedClass = 3;
+                        probabilities = [5.0, 20.0, 65.0, 8.0, 2.0];
+                    } else if (avgGrade >= 40) {
+                        predictedClass = 4;
+                        probabilities = [1.0, 5.0, 25.0, 60.0, 9.0];
+                    } else {
+                        predictedClass = 5;
+                        probabilities = [0.5, 2.0, 10.0, 25.0, 62.5];
+                    }
+
+                    // Add some randomness based on age
+                    if (age > 22) {
+                        probabilities[predictedClass - 1] += 5;
+                        probabilities = probabilities.map(p => Math.max(0, p));
+                        // Normalize to 100%
+                        const total = probabilities.reduce((a, b) => a + b, 0);
+                        probabilities = probabilities.map(p => (p / total * 100));
+                    }
+
+                    // Simulate model accuracy
+                    const accuracy = (75 + Math.random() * 20).toFixed(2);
+                    
+                    // Update UI
+                    document.getElementById('predictedClass').textContent = predictedClass;
+                    document.getElementById('modelAccuracy').textContent = accuracy + '%';
+                    
+                    // Update probabilities
+                    const probabilitiesList = document.getElementById('probabilitiesList');
+                    probabilitiesList.innerHTML = '';
+                    
+                    probabilities.forEach((prob, index) => {
+                        const item = document.createElement('div');
+                        item.className = 'probability-item';
+                        item.innerHTML = `
+                            <span class="class-label">Class ${index + 1}:</span>
+                            <div style="display: flex; align-items: center;">
+                                <span class="probability-value">${prob.toFixed(2)}%</span>
+                                <div class="probability-bar">
+                                    <div class="probability-fill" style="width: ${prob}%"></div>
+                                </div>
+                            </div>
+                        `;
+                        probabilitiesList.appendChild(item);
+                    });
+                    
+                    resultArea.classList.add('show');
+                    
+                } catch (error) {
+                    errorMessage.textContent = '❌ Prediction failed. Please try again.';
+                    errorMessage.style.display = 'block';
+                }
+                
+                // Reset button
+                button.innerHTML = 'Predict Grade';
+                button.classList.remove('loading');
+                button.disabled = false;
+                
+            }, 2000);
+        });
+
+        // Add input validation
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('input', function() {
+                const value = parseFloat(this.value);
+                const min = parseFloat(this.min);
+                const max = parseFloat(this.max);
+                
+                if (value < min || value > max) {
+                    this.style.borderColor = '#ef4444';
+                } else {
+                    this.style.borderColor = '#22c55e';
+                }
+            });
+        });
+
+        // Add focus effects
+        document.querySelectorAll('input[type="number"]').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.querySelector('label').style.color = '#667eea';
+            });
+            
+            input.addEventListener('blur', function() {
+                this.parentElement.querySelector('label').style.color = '#4a5568';
+            });
+        });
+    </script>
+</body>
+</html>
